@@ -1,0 +1,73 @@
+body{
+    background-color: #FFF2D8;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#genBtn {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    border-style: none;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#top-page{
+    border-radius: 100px;
+    background-color: #EAD7BB;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+div#memeContainer {
+    columns: 3;
+    column-gap: 100px;
+}
+
+.memeStyle {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.memeDiv {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    transition: filter 1s;
+}
+
+.memeDiv:hover .memeStyle {
+    filter: blur(2px);
+}
+
+
+.deleteBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgba(248, 54, 54, 0.726);
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.memeDiv:hover .deleteBtn {
+    font-size: x-large;
+    display: block;
+    border: none;
+    border-radius: 15px;
+}
